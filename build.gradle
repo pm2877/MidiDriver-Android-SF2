@@ -13,6 +13,10 @@ buildscript {
     }
 }
 
+plugins {
+    id 'maven-publish'
+}
+
 allprojects {
     repositories {
         jcenter()
@@ -24,16 +28,12 @@ task clean(type: Delete) {
     delete rootProject.buildDir
 }
 
-plugins {
-    id 'maven-publish'
-}
-
 publishing {
     publications {
         release(MavenPublication) {
             groupId = 'com.github.pm2877'
             artifactId = 'MidiDriver-Android-SF2'
-            version = '1.0.3'
+            version = '1.0.4'
 
             afterEvaluate {
                 from components.release
