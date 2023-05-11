@@ -3,11 +3,6 @@ plugins {
     id 'maven-publish'
 }
 
-java {
-    withJavadocJar()
-    withSourcesJar()
-}
-
 android {
     compileSdkVersion 28
     
