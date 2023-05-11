@@ -5,8 +5,6 @@ plugins {
 
 android {
     compileSdkVersion 28
-    
-    namespace = 'com.pm2877.bandish'
 
     defaultConfig {
         minSdkVersion 15
