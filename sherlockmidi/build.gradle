@@ -3,6 +3,11 @@ plugins {
     id 'maven-publish'
 }
 
+java {
+    withJavadocJar()
+    withSourcesJar()
+}
+
 android {
     compileSdkVersion 28
     
@@ -18,13 +23,6 @@ android {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
-        }
-    }
-    publishing {
-        singleVariant("release") {
-            // if you don't want sources/javadoc, remove these lines
-            withSourcesJar()
-            withJavadocJar()
         }
     }
 }
