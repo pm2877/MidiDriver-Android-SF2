@@ -18,13 +18,14 @@ allprojects {
         jcenter()
         google()
     }
-    plugins {
-        id 'maven-publish'
-    }
 }
 
 task clean(type: Delete) {
     delete rootProject.buildDir
+}
+
+plugins {
+    id 'maven-publish'
 }
 
 publishing {
