@@ -28,14 +28,15 @@ task clean(type: Delete) {
     delete rootProject.buildDir
 }
 
-afterEvaluate {
-    publishing {
-        publications {
-            release(MavenPublication) {
+publishing {
+    publications {
+        release(MavenPublication) {
+            groupId = 'com.github.pm2877'
+            artifactId = 'MidiDriver-Android-SF2'
+            version = '1.0.9'
+
+            afterEvaluate {
                 from components.release
-                groupId = 'com.github.pm2877'
-                artifactId = 'MidiDriver-Android-SF2'
-                version = '1.0.8'
             }
         }
     }
