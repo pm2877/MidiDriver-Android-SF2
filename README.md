@@ -1,3 +1,5 @@
+[![](https://jitpack.io/v/pm2877/MidiDriver-Android-SF2.svg)](https://jitpack.io/#pm2877/MidiDriver-Android-SF2)
+
 # MidiDriver
 MIDI synthesizer for android (soundfont2 is supported)
 
