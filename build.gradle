@@ -33,7 +33,7 @@ publishing {
         release(MavenPublication) {
             groupId = 'com.github.pm2877'
             artifactId = 'MidiDriver-Android-SF2'
-            version = '1.0.4'
+            version = '1.0.5'
 
             afterEvaluate {
                 from components.release
