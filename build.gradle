@@ -14,7 +14,6 @@ buildscript {
 }
 
 plugins {
-    id 'com.android.library'
     id 'maven-publish'
 }
 
@@ -36,7 +35,7 @@ afterEvaluate {
                 from components.release
                 groupId = 'com.github.pm2877'
                 artifactId = 'MidiDriver-Android-SF2'
-                version = '1.0.6'
+                version = '1.0.8'
             }
         }
     }
